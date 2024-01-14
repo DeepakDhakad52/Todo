@@ -36,6 +36,7 @@ const Login = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 type="email" name="email" id="email"
                 placeholder="Enter Email"
+                required
                 className='border p-2 outline-none block my-2 rounded-lg w-[80%] mx-auto mt-32' />
 
             <input
@@ -43,6 +44,7 @@ const Login = () => {
                 onChange={(e) => setPassword(e.target.value)}
                 type="password" name="password" id="password"
                 placeholder="Enter Password"
+                required
                 className='border p-2 outline-none block my-2 rounded-lg w-[80%] mx-auto mt-6' />
 
             <p className='text-lg text-center my-6'><span>Don't have an account?</span> <Link to={'/register'} className='underline font-semibold text-red-500'>click here to register</Link></p>

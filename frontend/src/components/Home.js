@@ -59,7 +59,7 @@ const SignedInHome = () => {
     const handleUpdateClick = (e, id) => {
         e.stopPropagation();
         try {
-            axios.put(`http://localhost:5001/task/update/${id}`, {}, {
+            axios.patch(`http://localhost:5001/task/update/${id}`, {}, {
                 withCredentials: true
             })
                 .then(response => {
